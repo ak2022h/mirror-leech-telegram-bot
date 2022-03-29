@@ -59,12 +59,12 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("MyBoss", "https://t.me/akashh_16")
-    buttons.buildbutton("Contact", "https://t.me/akashh_16")
+    buttons.buildbutton("𝐌𝐲 𝐁𝐨𝐬𝐬", "https://t.me/akashh_16")
+    buttons.buildbutton("𝐂𝐨𝐧𝐭𝐚𝐜𝐭", "https://t.me/YourDemandZone")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-Hey Mr.AKash !!!
+𝘏𝘦𝘺 𝘔𝘳.𝘈𝘬𝘢𝘴𝘩 !!!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
